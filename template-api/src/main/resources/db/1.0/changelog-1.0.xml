@@ -1,0 +1,11 @@
+<databaseChangeLog
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="BLOG" id="1.0.0">
+        <sqlFile dbms="postgresql" path="db/1.0/1.0.0_create_common.sql" />
+    </changeSet>
+    <changeSet author="BLOG" id="1.0.1">
+        <sqlFile dbms="postgresql" path="db/1.0/1.0.1_insert_user_profile.sql" />
+    </changeSet>
+</databaseChangeLog>
